@@ -6,7 +6,7 @@ export const registerServiceWorker = () => {
       .then(registration => navigator.serviceWorker.ready)
       .catch(function (err) {
         console.log('ServiceWorker registration failed: ', err);
-        alert('Navegador sem suporte ao sw!')
+        alert('Navegador sem suporte a instalação do aplicativo!')
       })
   }
 }
