@@ -1,5 +1,7 @@
 # teste-bycoders_
 
+## Deploy da app realizada no link: https://dirty-plants.surge.sh/
+
 Algumas observações:
 
 * O PWA funciona tanto Android como IOS, seja no chrome ou safari. O funcionamento do PWA no IOS é um pouco diferente. Para instalar o app, já que não é exibido a mensagem, é preciso clicar no ícone de "Compartilhar" do Safari, na sequência em "Adicionar a Tela de Início" e depois em "Adicionar".
