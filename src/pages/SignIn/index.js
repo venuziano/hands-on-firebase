@@ -4,9 +4,9 @@ import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
+import FirebaseUIAuth from "react-firebaseui-localized";
 
-import { firebase } from "../../firebase";
+import { firebase } from "../../services/firebase";
 
 import logoImg from '../../assets/logo.svg';
 
@@ -53,9 +53,12 @@ function Login() {
         <Typography style={{ marginTop: '1rem' }} component="h1" variant="h5">
           Acessar com
         </Typography>
-        <StyledFirebaseAuth
-          uiConfig={firebaseAuthConfig}
-          firebaseAuth={firebase.auth()}
+        <FirebaseUIAuth
+          lang="pt_br"
+          version="4.7.3"
+          config={firebaseAuthConfig}
+          auth={firebase.auth()}
+          firebase={firebase}
         />
       </div>
       <Box mt={8}>
