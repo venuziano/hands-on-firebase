@@ -66,7 +66,6 @@ function Login() {
       </Box>
     </Container>
   );
-
 }
 
 export default Login;

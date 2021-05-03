@@ -115,12 +115,7 @@ function Location() {
       <div>
         <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}>
           <GoogleMap
-            mapContainerStyle={{
-              width: '97vw',
-              height: '90vh',
-              borderRadius: '10px',
-              margin: '1rem',
-            }}
+            mapContainerClassName="maps"
             center={position}
             onLoad={(map) => { handlePosition(map) }}
             options={{
