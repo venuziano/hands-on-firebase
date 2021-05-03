@@ -4,7 +4,7 @@
 
 Algumas observações:
 
-* O PWA funciona tanto no Android como IOS, seja no chrome ou safari. O funcionamento do PWA no IOS é um pouco diferente. Para instalar o app, já que não é exibido a mensagem, é preciso clicar no ícone de "Compartilhar" do Safari, na sequência em "Adicionar a Tela de Início" e depois em "Adicionar". __OBS:__ O PWA está armazenando em cache aproximadamente 200mb a cada login com sucesso, caso não queira testar com ele, comente a linha 23 (registerServiceWorker();) do index.js. É possível apagar o cache após o uso.
+* O PWA funciona tanto no Android como IOS, seja no chrome ou safari. O funcionamento do PWA no IOS é um pouco diferente. Para instalar o app, já que não é exibido a mensagem, é preciso clicar no ícone de "Compartilhar" do Safari, na sequência em "Adicionar a Tela de Início" e depois em "Adicionar". __OBS:__ A linha que ativa a função PWA está comentada, pois, O PWA está armazenando em cache aproximadamente 200mb a cada login com sucesso e aumenta conforme o mapa é renderizado, caso queira testar com ele, descomente a linha 23 (registerServiceWorker();) do index.js. É possível apagar o cache após o uso.
 * Utilizei o Sentry no lugar do Crashylitcs. Não achei pra integrar em app web.
 * Não defini as variáveis de ambiente do projeto do Firebase para que no seu teste não seja preciso configurar o seu ambiente do Firebase.
 
