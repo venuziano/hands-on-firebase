@@ -1,17 +1,16 @@
-# teste-bycoders_
+# Firebase Integration
 
-## Deploy da app realizada no link: https://dirty-plants.surge.sh/
+## Deployed at: https://dirty-plants.surge.sh/
 
-Algumas observações:
+Note:
 
-* O PWA funciona tanto no Android como IOS, seja no chrome ou safari. O funcionamento do PWA no IOS é um pouco diferente. Para instalar o app, já que não é exibido a mensagem, é preciso clicar no ícone de "Compartilhar" do Safari, na sequência em "Adicionar a Tela de Início" e depois em "Adicionar". __OBS:__ A linha que ativa a função PWA está comentada, pois, O PWA está armazenando em cache aproximadamente 200mb a cada login com sucesso e aumenta conforme o mapa é renderizado, caso queira testar com ele, descomente a linha 23 (registerServiceWorker();) do index.js. É possível apagar o cache após o uso.
-* Utilizei o Sentry no lugar do Crashylitcs. Não achei pra integrar em app web.
-* Não defini as variáveis de ambiente do projeto do Firebase para que no seu teste não seja preciso configurar o seu ambiente do Firebase.
+* The PWA works on both Android and iOS, in Chrome or Safari. On iOS the behavior is slightly different. To install the app (since the usual prompt doesn’t appear), tap Safari’s Share icon, then select “Add to Home Screen,” and finally tap “Add.”
+Note: The line that enables the PWA is commented out because it caches roughly 200 MB on every successful login—and grows further as the map renders. To test with it enabled, uncomment line 23 (registerServiceWorker();) in index.js. You can clear the cache afterward.
 
-### Tela de Login:
+### Login screen:
 ![](github/singUp.png)
 
-### Tela do Home:
+### Home screen:
 ![](github/home.png)
 
 ### Firebase Auth:
@@ -25,8 +24,8 @@ Algumas observações:
 
 ![](github/analytics-2.png)
 
-### Sentry para captura de erros:
+### Sentry for errors:
 ![](github/sentry-errors.png)
 
-### App PWA:
+### PWA:
 ![](github/pwa.jpeg)
