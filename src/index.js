@@ -8,7 +8,7 @@ import { registerServiceWorker } from './pwa/sw.js';
 import './styles/global.css';
 
 Sentry.init({
-  dsn: "https://124156695a204373a0311bcedd09c9ea@o603945.ingest.sentry.io/5744584",
+  dsn: process.env.REACT_APP_SENTRY_DNS,
   integrations: [new Integrations.BrowserTracing()],
   tracesSampleRate: 1.0,
 });
